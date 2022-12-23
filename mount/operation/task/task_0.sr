@@ -1,0 +1,14 @@
+taskNumber:0
+name:Warm Up
+context:::1
+.:This task is meant to get you started with the tool.
+phases:::9
+.::8
+..description:::4
+...:Please open "lib/main.dart", and flow to "BooksModel" by clicking on its first occurence in main and selecting "Go to Definition".
+...:Then select the first line of "BooksModel".
+...:Finally, please write "Hello World" into the text field below.
+...:Only then click on "continue" to go to the actual first task.
+..minuteEstimate:1
+..colorHex:0x884287f5
+..textHintIfHasTextField:Please Type 'Hello World'...

@@ -1,0 +1,18 @@
+taskNumber:1
+name:Code Change
+context:::1
+.:One of the app's features in the Desktop version allows the user to share a link to a book via a button.
+phases:::13
+.::5
+..description:::2
+...:Please trace the program flow from when the corresponding button is pressed to when the link is made available.
+...:Before clicking "continue", please highlight the involved line(s) across the involved file(s).
+..minuteEstimate:7
+..colorHex:0x88628B48
+.::6
+..description:::3
+...:A user complained that the shared link contains their email address in plain text.
+...:Your task is to find and mark the code line(s) that resulted in this program bug.
+...:Before clicking "continue", please highlight the involved line(s) across the involved file(s).
+..minuteEstimate:7
+..colorHex:0x88566e2a

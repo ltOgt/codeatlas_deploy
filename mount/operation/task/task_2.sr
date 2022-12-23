@@ -1,0 +1,20 @@
+taskNumber:2
+name:Debugging
+context:::1
+.:When the user deletes a page of a book (via a button), the next page in the book is shown as the current page.
+phases:::15
+.::5
+..description:::2
+...:Please trace the program flow from when the corresponding button is pressed to when the next page is shown.
+...:Before clicking "continue", please highlight the involved line(s) across the involved file(s).
+..minuteEstimate:7
+..colorHex:0x88449DD1
+.::8
+..description:::4
+...:A user complained that an error occurred citing "delete_page_command.dart" at "line 33", when they deleted the only page in a book.
+...:Your task is to find the corresponding code line(s) that caused the bug.
+...:Before clicking "continue", please highlight the involved line(s) across the involved file(s).
+...:Also describe the reason for the bug in the text field below.
+..minuteEstimate:7
+..colorHex:0x88150578
+..textHintIfHasTextField:The bug occured because...

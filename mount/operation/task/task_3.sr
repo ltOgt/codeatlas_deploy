@@ -1,0 +1,21 @@
+taskNumber:3
+name:Comprehension
+context:::1
+.:The App uses a firebase service to upload data into cloud firestore.
+phases:::16
+.::9
+..description:::5
+...:This service is implemented in two classes: "NativeFirebaseService" and "DartFirebaseService".
+...:Which version of the App (desktop, mobile, web) uses which service class?
+...:Find the location where the decision is made to use either of the two services.
+...:Before clicking "continue", please highlight the involved line(s) across the involved file(s).
+...:Also describe when "NativeFirebaseService" is used in the text field below.
+..minuteEstimate:7
+..colorHex:0x88D90368
+..textHintIfHasTextField:"NativeFirebaseService" is used for...
+.::5
+..description:::2
+...:How does the call to the firestore API differ between the two classes "NativeFirebaseService" and "DartFirebaseService" when adding a new document?
+...:Please annotate the differing code line in both classes.
+..minuteEstimate:7
+..colorHex:0x88820263
