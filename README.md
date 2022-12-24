@@ -27,12 +27,29 @@ The frontend
   - as tabs with the option to split the screen like in traditional IDEs
 - presents participants with tasks and collects their solutions
 
-![Video Showing CodeAltas Server and Canvas Client with some basic interaction in the client and stdout of the server](https://omnesia.org/store/codeatlas.mp4)
+<details>
+<summary>
+Video Showing CodeAltas Server and Canvas Client with some basic interaction in the client and stdout of the server
+</summary>
 
-![Video Showing CodeAltas Tab based Client with some basic interaction](https://omnesia.org/store/codeatlas-ctrl.mov)
+https://user-images.githubusercontent.com/24209580/209453034-85d856e6-34ba-4b15-9b22-9c3317115d31.mov
+
+</details>
 
 
-The project was built using dart and flutter, and was only tested with the dart language server and a flutter target code base.
+
+<details>
+<summary>
+Video Showing CodeAltas Tab based Client with some basic interaction
+</summary>
+
+https://user-images.githubusercontent.com/24209580/209453071-ce7bd982-7617-4c2d-b5a1-b399277609eb.mov
+
+</details>
+
+
+The project was built using [dart](https://dart.dev/) and [flutter](https://flutter.dev/),
+and currently only works with the dart language server and a dart/flutter target code base.
 
 # CodeAtlas Deployment Repository
 
@@ -69,6 +86,7 @@ In addition to the files provided in this repository, you will need:
   - the Dart SDK as part of Flutter
     - e.g. installed via `snap`: `~/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot`
 - `fullchain.pem` and `privkey.pem` of your SSL certificate to run the server with `HTTPS` (without these it will use `HTTP`)
+- run `dart pub get` or `flutter pub get` inside the `code/` directory to get all dependencies the analyzer needs to work properly
 
 ### Loading the image
 The main docker image can be found under [Releases](https://github.com/ltOgt/codeatlas_deploy/releases).
