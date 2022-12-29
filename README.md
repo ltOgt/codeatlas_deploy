@@ -81,13 +81,11 @@ This repository provides most of the files needed to run CodeAtlas in its curren
 ### Requirements
 In addition to the files provided in this repository, you will need:
 - `docker` to run the containerized backend
-- `analysis_server.dart.snapshot` which you can get via
-  - the standalone Dart SDK
-  - the Dart SDK as part of Flutter
+- `flutter` SDK to fetch all dependencies for the `code/`
+  - can be installed e.g. via `snap install flutter` on ubuntu, or by following the steps in the [docs](https://docs.flutter.dev/get-started/install)
+- `analysis_server.dart.snapshot` which you can get via the `dart` SDK as part of Flutter
     - e.g. installed via `snap`: `~/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot`
 - `fullchain.pem` and `privkey.pem` of your SSL certificate to run the server with `HTTPS` (without these it will use `HTTP`)
-- run `dart pub get` or `flutter pub get` inside the `code/` directory to get all dependencies the analyzer needs to work properly
-  - NOTE: this is also why `analysis_server.dart.snapshot` cant be distributed as part of the docker image; the Dart SDK version used to resolve the dependencies and cache them on your machine needs to match that of the `analysis_server`
 
 ### Loading the image
 The main docker image can be found under [Releases](https://github.com/ltOgt/codeatlas_deploy/releases).
@@ -102,6 +100,8 @@ Once you have a local copy of the `mount/` directory, you will need to
   - make sure it has read permissions (e.g. `chmod a+r`)
 - copy `privkey.pem` into the `mount/` folder (to use HTTPS)
   - make sure it has read permissions (e.g. `chmod a+r`)
+- run `flutter pub get` inside the `code/` directory to get all dependencies the analyzer needs to work properly
+  - NOTE: this is also why `analysis_server.dart.snapshot` can not be distributed as part of the docker image; the Dart SDK version used to resolve the dependencies and cache them on your machine needs to match that of the `analysis_server`
 
 ### Running the image
 
