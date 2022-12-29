@@ -87,6 +87,7 @@ In addition to the files provided in this repository, you will need:
     - e.g. installed via `snap`: `~/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot`
 - `fullchain.pem` and `privkey.pem` of your SSL certificate to run the server with `HTTPS` (without these it will use `HTTP`)
 - run `dart pub get` or `flutter pub get` inside the `code/` directory to get all dependencies the analyzer needs to work properly
+  - NOTE: this is also why `analysis_server.dart.snapshot` cant be distributed as part of the docker image; the Dart SDK version used to resolve the dependencies and cache them on your machine needs to match that of the `analysis_server`
 
 ### Loading the image
 The main docker image can be found under [Releases](https://github.com/ltOgt/codeatlas_deploy/releases).
