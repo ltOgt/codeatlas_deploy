@@ -110,7 +110,7 @@ Once you have a local copy of the `mount/` directory, you will need to
 If you have loaded the image into your docker, you can run it with
 
 ```
-docker run --platform linux/amd64 -p <desired_port>:8181 -v <path_to_mount_dir>:/codeatlas codeatlas:latest
+docker run --platform linux/amd64 -p <desired_port>:8181 -v <ABSOLUT_PATH_to_mount_dir>:/codeatlas codeatlas:latest
 ```
 
 
