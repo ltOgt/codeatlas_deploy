@@ -102,7 +102,9 @@ Once you have a local copy of the `mount/` directory, you will need to
   - make sure it has read permissions (e.g. `chmod a+r`)
 - run `flutter pub get` inside the `code/` directory to get all dependencies the analyzer needs to work properly
   - NOTE: this is also why `analysis_server.dart.snapshot` can not be distributed as part of the docker image; the Dart SDK version used to resolve the dependencies and cache them on your machine needs to match that of the `analysis_server`
-- use `cd mount/operation/user/ && ./makeUser.sh` to create users
+- use `cd mount/operation/user/` and then `./makeUser.sh` to create new users as needed
+  - run without arguments for more info on how to use that script
+  - should be run inside `mount/operation/user/`
 
 
 ### Running the image
